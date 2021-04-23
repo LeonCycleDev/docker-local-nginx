@@ -11,8 +11,6 @@
 
 ## Table of contents
 
-- [Free Course](#free-course)
-- [Docker Hub](#docker-hub)
 - [Usage](#usage)
 - [Prerequisites](#prerequisites)
 - [Setup](#setup)
@@ -21,103 +19,6 @@
 - [Misc Info](#misc-info)
 - [Credits](#credits)
 - [License](#license)
-
-## Free Course
-
-This course is sponsored by <a href="https://m.academy" target="_blank">M.academy</a>, the simplest way to learn Magento.
-
-<a href="https://m.academy" target="_blank"><img src="https://raw.githubusercontent.com/markshust/docker-magento/master/docs/macademy-logo.png" alt="M.academy"></a>
-
-A free screencast course is available, which details the basic usage of this project:
-
-<a href="https://m.academy/courses/set-up-magento-2-development-environment-docker" target="_blank">
-<img src="https://raw.githubusercontent.com/markshust/docker-magento/master/docs/set-up-magento-2-development-environment-docker-og.png" alt="Course image"><br />
-<br />
-Set Up a Magento 2 Development Environment with Docker
-</a>
-
-### Course Curriculm
-
-#### Project Setup
-
-- <a href="https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9205849" target="_blank">Setup Docker for Mac & configure preferences</a>
-- <a href="https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9273365" target="_blank">Setup global Composer auth credentials</a>
-- <a href="https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/8974570" target="_blank">Automated setup for new installs</a>
-
-#### Helper Scripts
-
-- <a href="https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064258" target="_blank">Run CLI commands within containers</a>
-- <a href="https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9331008" target="_blank">Stop, start & restart containers</a>
-- <a href="https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064269" target="_blank">Run binaries within containers</a>
-
-#### Docker Filesystem & Volumes
-
-- <a href="https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064334" target="_blank">Understand volumes & host bind mounts</a>
-- <a href="https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064338" target="_blank">Manage files & folders on containers</a>
-
-#### Customize Server Configuration
-
-- <a href="https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064349" target="_blank">Customize the Nginx configuration</a>
-- <a href="https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064356" target="_blank">Quickly switch PHP versions</a>
-- <a href="https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064350" target="_blank">Install extensions & packages</a>
-- <a href="https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064477" target="_blank">Run additional services as containers</a>
-- <a href="https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/14780970" target="_blank">Configure multi-store instances</a>
-
-#### PHPStorm & Xdebug
-
-- <a href="https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9748834" target="_blank">Setup PHPStorm for a Magento Docker project</a>
-- <a href="https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9763893" target="_blank">Generate XML URNs for a Magento Docker project</a>
-- <a href="https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064478" target="_blank">Install Xdebug browser plugin</a>
-- <a href="https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064482" target="_blank">Enable, disable, & check Xdebug</a>
-- <a href="https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064615" target="_blank">Configure PHPStorm for Xdebug</a>
-- <a href="https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064617" target="_blank">Trigger Xdebug breakpoints with PHPStorm</a>
-
-#### Manual Setup (Optional)
-
-- <a href="https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9064259" target="_blank">Manual setup for new Magento installs</a>
-- <a href="https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/9283467" target="_blank">Manual setup for an existing Magento instance</a>
-
-## Docker Hub
-
-View Dockerfiles:
-
-- [markoshust/magento-nginx (Docker Hub)](https://hub.docker.com/r/markoshust/magento-nginx/)
-  - 1.18
-      - [`1.18`, `1.18-4`](https://github.com/markshust/docker-magento/tree/master/images/nginx/1.18)
-      - [`1.18-3`](https://github.com/markshust/docker-magento/tree/34.0.0/images/nginx/1.18)
-      - [`1.18-2`](https://github.com/markshust/docker-magento/tree/33.0.0/images/nginx/1.18)
-      - [`1.18-1`](https://github.com/markshust/docker-magento/tree/31.0.1/images/nginx/1.18)
-      - [`1.18-0`](https://github.com/markshust/docker-magento/tree/31.0.0/images/nginx/1.18)
-- [markoshust/magento-php (Docker Hub)](https://hub.docker.com/r/markoshust/magento-php/)
-  - 8.0 (available for alpha testing)
-      - [`8.0-fpm-develop`](https://github.com/markshust/docker-magento/tree/master/images/php/8.0)
-  - 7.4
-      - [`7.4-fpm`, `7.4-fpm-5`](https://github.com/markshust/docker-magento/tree/master/images/php/7.4)
-      - [`7.4-fpm-4`](https://github.com/markshust/docker-magento/tree/36.0.2/images/php/7.4)
-      - [`7.4-fpm-3`](https://github.com/markshust/docker-magento/tree/36.0.1/images/php/7.4)
-      - [`7.4-fpm-2`](https://github.com/markshust/docker-magento/tree/34.2.0/images/php/7.4)
-      - [`7.4-fpm-1`](https://github.com/markshust/docker-magento/tree/34.1.0/images/php/7.4)
-      - [`7.4-fpm-0`](https://github.com/markshust/docker-magento/tree/33.0.0/images/php/7.4)
-  - 7.3
-      - [`7.3-fpm`, `7.3-fpm-12`](https://github.com/markshust/docker-magento/tree/master/images/php/7.3)
-      - [`7.3-fpm-11`](https://github.com/markshust/docker-magento/tree/36.0.2/images/php/7.3)
-      - [`7.3-fpm-10`](https://github.com/markshust/docker-magento/tree/36.0.1/images/php/7.3)
-      - [`7.3-fpm-9`](https://github.com/markshust/docker-magento/tree/34.2.0/images/php/7.3)
-      - [`7.3-fpm-8`](https://github.com/markshust/docker-magento/tree/34.1.0/images/php/7.3)
-      - [`7.3-fpm-7`](https://github.com/markshust/docker-magento/tree/33.0.0/images/php/7.3)
-      - [`7.3-fpm-6`](https://github.com/markshust/docker-magento/tree/32.0.1/images/php/7.3)
-      - [`7.3-fpm-5`](https://github.com/markshust/docker-magento/tree/30.0.0/images/php/7.3)
-      - [`7.3-fpm-4`](https://github.com/markshust/docker-magento/tree/29.0.0/images/php/7.3)
-      - [`7.3-fpm-3`](https://github.com/markshust/docker-magento/tree/28.0.0/images/php/7.3)
-      - [`7.3-fpm-2`](https://github.com/markshust/docker-magento/tree/27.2.0/images/php/7.3)
-      - [`7.3-fpm-1`](https://github.com/markshust/docker-magento/tree/26.0.0/images/php/7.3)
-      - [`7.3-fpm-0`](https://github.com/markshust/docker-magento/tree/24.2.0/images/php/7.3)
-- [markoshust/magento-elasticsearch (Docker Hub)](https://hub.docker.com/r/markoshust/magento-elasticsearch/)
-  - 7
-      - [`7.7`, `7.7.1-0`](https://github.com/markshust/docker-magento/tree/master/images/elasticsearch/7.7)
-      - [`7.6`, `7.6.2-2`](https://github.com/markshust/docker-magento/tree/35.0.0/images/elasticsearch/7.6)
-      - [`7.6.2-1`](https://github.com/markshust/docker-magento/tree/32.0.0/images/elasticsearch/7.6)
-      - [`7.6.2-0`](https://github.com/markshust/docker-magento/tree/31.0.2/images/elasticsearch/7.6)
 
 ## Usage
 
@@ -128,7 +29,7 @@ Folders:
 - `images`: Docker images for nginx and php
 - `compose`: sample setups with Docker Compose
 
-> The Magento 1 version of this development environment has been deprecated and is no longer supported. PHP 5 was used as it's base, and that version has reached end-of-life. If you still wish to use this setup, please reference [compose/magento-1 on tag 20.1.1](https://github.com/markshust/docker-magento/tree/20.1.1/compose/magento-1), but please be aware these images are no longer maintained.
+> The Magento 1 version of this development environment has been deprecated and is no longer supported. PHP 5 was used as it's base, and that version has reached end-of-life. If you still wish to use this setup, please reference [compose/magento-1 on tag 20.1.1](https://github.com/LeonCycleDev/docker-magento/tree/20.1.1/compose/magento-1), but please be aware these images are no longer maintained.
 
 ## Prerequisites
 
@@ -146,9 +47,9 @@ Run this automated one-liner from the directory you want to install your project
 curl -s https://raw.githubusercontent.com/LeonCycleDev/docker-local-nginx/master/lib/onelinesetup | bash -s -- leoncycle.local 2.3.6
 ```
 
-The `magento.test` above defines the hostname to use, and the `2.4.2` defines the Magento version to install. Note that since we need a write to `/etc/hosts` for DNS resolution, you will be prompted for your system password during setup.
+The `leoncycle.local` above defines the hostname to use, and the `2.3.6` defines the Magento version to install. Note that since we need a write to `/etc/hosts` for DNS resolution, you will be prompted for your system password during setup.
 
-After the one-liner above completes running, you should be able to access your site at `https://magento.test`.
+After the one-liner above completes running, you should be able to access your site at `https://leoncycle.local`.
 
 #### Install sample data
 
@@ -161,7 +62,7 @@ bin/magento setup:upgrade
 
 ### Manual Setup
 
-Same result as the one-liner above. Just replace `magento.test` references with the hostname that you wish to use.
+Same result as the one-liner above. Just replace `leoncycle.local` references with the hostname that you wish to use.
 
 #### New Projects
 
@@ -227,7 +128,7 @@ open https://magento.test
 
 ## Updates
 
-To update your project to the latest version of `docker-magento`, run:
+To update your project to the latest version of `docker-local-nginx`, run:
 
 ```
 bin/update
