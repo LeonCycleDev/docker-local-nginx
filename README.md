@@ -1,4 +1,4 @@
-<h1 align="center">markshust/docker-magento</h1>
+<h1 align="center">LeonCycleDev/docker-local-nginx</h1>
 
 <div align="center">
   <p>Mark Shust's Docker Configuration for Magento</p>
@@ -143,7 +143,7 @@ This configuration has been tested on Mac & Linux. Windows is supported through 
 Run this automated one-liner from the directory you want to install your project.
 
 ```bash
-curl -s https://raw.githubusercontent.com/markshust/docker-magento/master/lib/onelinesetup | bash -s -- magento.test 2.4.2
+curl -s https://raw.githubusercontent.com/LeonCycleDev/docker-local-nginx/master/lib/onelinesetup | bash -s -- leoncycle.local 2.3.6
 ```
 
 The `magento.test` above defines the hostname to use, and the `2.4.2` defines the Magento version to install. Note that since we need a write to `/etc/hosts` for DNS resolution, you will be prompted for your system password during setup.
@@ -167,10 +167,10 @@ Same result as the one-liner above. Just replace `magento.test` references with 
 
 ```bash
 # Download the Docker Compose template:
-curl -s https://raw.githubusercontent.com/markshust/docker-magento/master/lib/template | bash
+curl -s https://raw.githubusercontent.com/LeonCycleDev/docker-local-nginx/master/lib/template | bash
 
 # Download the version of Magento you want to use with:
-bin/download 2.4.2
+bin/download 2.3.6
 
 # or for Magento core development:
 # docker-compose -f docker-compose.yml up -d
@@ -179,19 +179,19 @@ bin/download 2.4.2
 # bin/cli git checkout 2.4-develop
 
 # Create a DNS host entry for the site:
-echo "127.0.0.1 ::1 magento.test" | sudo tee -a /etc/hosts
+echo "127.0.0.1 ::1 leoncycle.local" | sudo tee -a /etc/hosts
 
 # Run the setup installer for Magento:
-bin/setup magento.test
+bin/setup leoncycle.local
 
-open https://magento.test
+open https://leoncycle.local
 ```
 
 #### Existing Projects
 
 ```bash
 # Download the Docker Compose template:
-curl -s https://raw.githubusercontent.com/markshust/docker-magento/master/lib/template | bash
+curl -s https://raw.githubusercontent.com/LeonCycleDev/docker-local-nginx/master/lib/template | bash
 
 # Replace with existing source code of your existing Magento instance:
 cp -R ~/Sites/existing src
